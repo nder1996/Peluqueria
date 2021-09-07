@@ -1,7 +1,7 @@
 <template>
-    <v-container fluid>
+    <v-container class="Principal" fluid>
         <v-row justify="space-around">
-            <v-col cols="5">
+            <v-col cols="6">
                 <div class="text-h6 mb-1">
                     Default (cover)
                 </div>
@@ -12,14 +12,19 @@
                 <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.7"></v-img>
               -->
             </v-col>
-            <v-col cols="5">
+            <v-col cols="6">
+                <!--
                 <div class="text-h6 mb-1">
                     Contain
                 </div>
                 <div class="subheading">
                     Matching
                 </div>
-                <v-img class="" src="../assets/Slider_1.jpg" aspect-ratio="1.7" contain></v-img>
+              -->
+              <img class="img" src="../assets/Slider_1.jpg" alt="">
+              <!--
+                <v-img class="img" src="../assets/Slider_1.jpg" max-height="300" max-width="900" aspect-ratio="1" contain></v-img>
+              -->
             </v-col>
         </v-row>
     </v-container>
@@ -82,13 +87,17 @@ export default {
 <style>
 .Principal {
     border: 5px solid red;
-
     height: 100%;
+    background:rgb(0,0,0,1)
 }
 
-.Principal .img {
+.img_1 {
+    border: 5px solid red;
+}
+
+.img {
     border: 5px solid black;
-    width: 50%;
-    height: 500px;
+     width: 101.5%;
+    height: 800px;
 }
 </style>
