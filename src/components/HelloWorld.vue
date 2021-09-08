@@ -1,33 +1,25 @@
-<template>
-    <v-container class="Principal" fluid>
-        <v-row justify="space-around">
-            <v-col cols="6">
-                <div class="text-h6 mb-1">
-                    Default (cover)
-                </div>
-                <div class="subheading">
-                    Matching
-                </div>
-                <!--
-                <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.7"></v-img>
-              -->
-            </v-col>
-            <v-col cols="6">
-                <!--
-                <div class="text-h6 mb-1">
-                    Contain
-                </div>
-                <div class="subheading">
-                    Matching
-                </div>
-              -->
-              <img class="img" src="../assets/Slider_1.jpg" alt="">
-              <!--
-                <v-img class="img" src="../assets/Slider_1.jpg" max-height="300" max-width="900" aspect-ratio="1" contain></v-img>
-              -->
-            </v-col>
-        </v-row>
-    </v-container>
+<!--<template>
+  <v-container class="grey lighten-5">
+    <v-row
+      v-for="n in 2"
+      :key="n"
+      :class="n === 1 ? 'mb-6' : ''"
+      no-gutters
+    >
+      <v-col
+        v-for="k in n + 1"
+        :key="k"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          {{ k }} of {{ n + 1 }}
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <script>
 export default {
@@ -87,7 +79,7 @@ export default {
 <style>
 .Principal {
     border: 5px solid red;
-    height: 100%;
+    /*height: 100%;*/
     background:rgb(0,0,0,1)
 }
 
