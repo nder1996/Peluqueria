@@ -1,7 +1,7 @@
 <template>
     <v-app class="Principal">
         <div>
-            <v-app-bar color="#424242 accent-4" dense dark>
+            <v-app-bar class="Navbar" color="red" dense dark>
                 <v-toolbar-title>Style Perfect</v-toolbar-title>
                 <v-spacer></v-spacer>
                 <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
@@ -16,39 +16,43 @@
                     <span class="mr-2">Sobre Nosotros</span>
                     <i class="far fa-question-circle"></i>
                 </v-btn>
-                </v-menu>
             </v-app-bar>
+            <Banner />
         </div>
-        <v-container class="Slider d-flex justify-center mb-6" fluid>
-            <v-row justify="space-around">
-                <v-col class="Slider_1">
-                    <h5>LA FORMA MÁS FÁCIL DE RESERVAR TUS CITAS DE BELLEZA</h5>
-                    <p>
-                        Más de 500 salones, centros de estética y spas
-                    </p>
-                </v-col>
-                <v-col class="Slider_1">
-                    <v-img class="IMG" src="./assets/Slider_1.jpg"></v-img>
+        <v-parallax class="Parallax" src="./assets/Fondo_P.jpg">
+            <v-row align="center" justify="center">
+                <v-col class="text-center" cols="12">
+                    <div class="Fondo_P">
+                        
+                    </div>
+                    <!--
+                        <h1 class="text-h4 font-weight-thin mb-4">
+                        </h1>
+                        <h4 class="subheading">
+                            Build your application today!
+                        </h4>
+                    -->
                 </v-col>
             </v-row>
-        </v-container>
+        </v-parallax>
         <!--
-            <v-card class="d-flex justify-center mb-6" :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'" flat tile>
-                <v-card  class="Slider_1">
-                    123456
-                </v-card>
-                <v-card  class="Slider_2">
-                    <v-img src="../src/assets/Slider_1.jpg"></v-img>
-                </v-card>
-                <!--
-                <v-card v-for="n in 2" :key="n" class="pa-2" outlined tile>
-                    justify-space-around
-                </v-card>
-         
-            </v-card>
-               -->
+            <v-container class="Slider d-flex justify-center" fluid>
+                <v-row justify="space-around">
+                    <v-col class="Slider_1">
+                        <h5>LA FORMA MÁS FÁCIL DE RESERVAR TUS CITAS DE BELLEZA</h5>
+                        <p>
+                            Más de 500 salones, centros de estética y spas
+                        </p>
+                    </v-col>
+                    <v-col class="Slider_1">
+                        <v-img class="IMG" src="./assets/Slider_1.jpg"></v-img>
+                    </v-col>
+                </v-row>
+            </v-container>
+        -->
+        <br> <br>
         <v-footer dark padless>
-            <v-card flat tile class="indigo lighten-1 white--text text-center">
+            <v-card flat tile class="#000000 lighten-1 white--text text-center">
                 <v-card-text>
                     <v-btn class="Footer mx-4 white--text" icon>
                         <i class="fab fa-facebook"></i>
@@ -101,6 +105,32 @@
 
     }
 
+    .Parallax{
+        border: 5px solid purple;
+        height: 100%;
+    }
+
+    .Principal{
+        border: 5px solid red;
+ 
+    }
+
+
+    .Fondo_P{
+        position: relative;
+        border: 5px solid black;
+        margin: auto;
+        width: 90%;
+        height: 1000px;
+        
+    }
+
+    .Slider{
+        border: 5px solid black;
+        
+    }
+
+
 /*
      .Slider_2{
          width: 40%;
@@ -124,6 +154,8 @@
     }
 </style>
 <script type="text/javascript">
+import Banner from './components/Banner.vue';
+
 export default {
     data: () => ({
         /* icons: [
@@ -133,5 +165,8 @@ export default {
              'mdi-instagram',
          ],*/
     }),
+    components: {
+        Banner
+    }
 }
 </script>
