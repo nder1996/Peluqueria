@@ -1,22 +1,23 @@
 <template>
-    <v-bottom-navigation v-model="value">
-        <v-btn value="recent">
-            <span>Alisados</span>
-        </v-btn>
-        <v-btn value="favorites">
-            <span>Color</span>
-        </v-btn>
-        <v-btn value="nearby">
-            <span>Asesoría de belleza</span>
-        </v-btn>
-        <v-btn value="recent">
-            <span>Tratamientos capilares</span>
-        </v-btn>
-        <v-btn value="favorites">
-            <span>Corte de pelo hombre</span>
-        </v-btn>
-        <v-btn value="nearby">
-            <span>Extensiones de pelo</span>
-        </v-btn>
-    </v-bottom-navigation>
+    <div>
+        <v-bottom-navigation>
+            <v-btn value="recent">
+                <router-link to="/">Inicio</router-link>
+            </v-btn>
+            <v-btn value="favorites">
+                <router-link to="/Contactanos">Contactanos</router-link>
+            </v-btn>
+            <v-btn value="nearby">
+             <router-link to="/Servicios">Servicios</router-link>
+            </v-btn>
+            <v-btn value="recent">
+                <router-link to="/Nosotros">Sobre Nosotros</router-link>
+            </v-btn>
+        </v-bottom-navigation>
+    </div>
 </template>
+<script>
+    export default{
+        name:'Banner'
+    }
+</script>
