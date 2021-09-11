@@ -7,7 +7,7 @@
               <h1 class="text-center mt-10">Nuestros Servicios</h1>
                <Card></Card>
                <Mas></Mas>
-              <Unisex></Unisex>
+              <Comments></Comments>
         </div>
          <Footer></Footer>
     </div>
@@ -20,14 +20,14 @@ import Footer from '../components/Footer.vue'
 import Slider from '../components/Slider.vue'
 import Card from '../components/Card.vue'
 import Mas from '../components/Mas.vue'
-import Unisex from '../components/Unisex.vue'
+import Comments from '../components/Comments.vue'
 export default {
     name: 'Home',
     components: {
         Navbar,
         Banner,
         Footer,
-        Slider,Card,Mas,Unisex
+        Slider,Card,Mas,Comments
     },
 }
 </script>

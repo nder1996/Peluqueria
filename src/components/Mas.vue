@@ -66,7 +66,7 @@
 
 
 .History{
-    border: 5px solid red;
+   
     width: 98%;
     margin: auto;
 }
