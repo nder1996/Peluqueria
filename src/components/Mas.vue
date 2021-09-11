@@ -7,9 +7,9 @@
                 <v-card>
                     <v-card-title class="blue-grey lighten-3">
                         <h2 class="text-h4 white--text font-weight-light text-center">
-                            <v-carousel cycle height="670" hide-delimiter-background show-arrows-on-hover>
+                            <v-carousel cycle height="610" hide-delimiter-background show-arrows-on-hover>
                                 <v-carousel-item v-for="(slide, i) in slides" :key="i">
-                                    <v-sheet class="ELLA" height="310" color="blue-grey lighten-3">
+                                    <v-sheet class="ELLA" height="270" color="blue-grey lighten-3">
                                         <v-row class="fill-height" align="center" justify="center">
                                             <div class="img-slider text-h2 mt-5">
                                                 <v-img :src="require(`@/assets/Tiempo_${[i+1]}.jpg`)" width="100%" height="380px"></v-img>

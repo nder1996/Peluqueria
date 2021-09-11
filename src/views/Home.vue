@@ -4,7 +4,7 @@
         <Banner></Banner>
         <div class="Principal mt-10"  >
             <Slider></Slider>
-              <h1 class="text-center mt-10">Nuestros Servicios</h1>
+            
                <Card></Card>
                <Mas></Mas>
               <Comments></Comments>
@@ -33,9 +33,10 @@ export default {
 </script>
 <style type="text/css" media="screen">
     .Principal{
-      border:5px solid red;
+     /* border:5px solid red;*/
       width:80%;
       margin:auto;
+     
 
     } 
 
