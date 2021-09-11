@@ -1,7 +1,7 @@
 <template>
     <v-app-bar class="Navbar" color="black" height="120" dense dark>
         <v-toolbar-title class="Logo text-center">
-        		<h1 class="Linia">Style Perfect</h1>
+            <img src="../assets/Logo.png" height="100" width="190" alt="">
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <!--

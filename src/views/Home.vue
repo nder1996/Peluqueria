@@ -2,16 +2,12 @@
     <div>
         <Navbar></Navbar>
         <Banner></Banner>
-        <div class="Principal mt-10">
+        <div class="Principal mt-10"  >
             <Slider></Slider>
               <h1 class="text-center mt-10">Nuestros Servicios</h1>
                <Card></Card>
-            <div class="Novedades d-flex justify-center">
-           
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-            </div>
+               <Mas></Mas>
+              <Unisex></Unisex>
         </div>
          <Footer></Footer>
     </div>
@@ -23,14 +19,15 @@ import Footer from '../components/Footer.vue'
 
 import Slider from '../components/Slider.vue'
 import Card from '../components/Card.vue'
-
+import Mas from '../components/Mas.vue'
+import Unisex from '../components/Unisex.vue'
 export default {
     name: 'Home',
     components: {
         Navbar,
         Banner,
         Footer,
-        Slider,Card
+        Slider,Card,Mas,Unisex
     },
 }
 </script>
@@ -39,6 +36,7 @@ export default {
       border:5px solid red;
       width:80%;
       margin:auto;
+
     } 
 
     .Novedades{
@@ -49,5 +47,8 @@ export default {
       border:5px solid red;
       margin-left:25px;
 
+    }
+    .Body{
+        border:5px solid black;
     } 
 </style>

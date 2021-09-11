@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-footer dark padless>
+        <v-footer class="mt-10" dark padless>
             <v-card flat tile class="#000000 lighten-1 white--text text-center">
                 <v-card-text>
                     <v-btn class="Footer mx-4 white--text" icon>
@@ -14,7 +14,7 @@
                 </v-card-text>
                 <v-divider></v-divider>
                 <v-card-text class="white--text">
-                    {{ new Date().getFullYear() }} — <strong>Style Perfect</strong>
+                  <img src="../assets/Logo.png" height="100" width="190"  alt="">
                 </v-card-text>
             </v-card>
         </v-footer>
