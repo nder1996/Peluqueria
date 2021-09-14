@@ -8,6 +8,7 @@
                <Card></Card>
                <Mas></Mas>
               <Comments></Comments>
+              <Google></Google>
         </div>
          <Footer></Footer>
     </div>
@@ -21,19 +22,21 @@ import Slider from '../components/Slider.vue'
 import Card from '../components/Card.vue'
 import Mas from '../components/Mas.vue'
 import Comments from '../components/Comments.vue'
+import Google from '../components/Google.vue'
+
 export default {
     name: 'Home',
     components: {
         Navbar,
         Banner,
         Footer,
-        Slider,Card,Mas,Comments
+        Slider,Card,Mas,Comments,Google
     },
 }
 </script>
 <style type="text/css" media="screen">
     .Principal{
-     /* border:5px solid red;*/
+     border:5px solid red;
       width:80%;
       margin:auto;
      

@@ -23,6 +23,7 @@
                 </v-row>
             </v-col>
         </v-container>
+        <Tabs></Tabs>
     </div>
 </template>
 <style>
@@ -52,8 +53,13 @@
 }
 </style>
 <script>
+import Tabs from '../components/Tabs.vue'
+
 export default {
     name: 'Card',
+    components:{
+        Tabs
+    },
     data() {
         return {
             page: 1,

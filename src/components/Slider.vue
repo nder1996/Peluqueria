@@ -1,16 +1,35 @@
 <template>
     <div class="Parallax">
-        <v-carousel cycle height="500" hide-delimiter-background show-arrows-on-hover>
+        <v-carousel cycle height="700" hide-delimiter-background show-arrows-on-hover>
             <v-carousel-item v-for="(slide, i) in slides" :key="i">
                 <v-sheet :color="colors[i]" height="100%">
-                    <v-img class="img-slider" :src="require(`@/assets/Slider_${[i+1]}.jpg`)" width="100%" height="500px">
+                    <v-img class="img-slider" :src="require(`@/assets/Slider_${[i+1]}.jpg`)" width="100%" height="850px">
                         <section class="Info-slider">
                             <h1 class="Titulo text-center fill-height" align="center" justify="center">
                                 {{ slide }} <br>
-                                 <v-btn class="btn-1" depressed elevation="2" large outlined v-if="i==2">Inscribirme</v-btn>
-                            </h1> 
+                                <!--
+                                <v-btn class="btn-1" depressed elevation="2" large outlined v-if="i==2">Inscribirme</v-btn>
+                            -->
+                                <v-col cols="auto">
+                                    <v-dialog transition="dialog-bottom-transition" max-width="1500">
+                                        <template v-slot:activator="{ on, attrs }">
+                                            <v-btn color="primary" v-bind="attrs" v-on="on" v-if="i==2">From the bottom</v-btn>
+                                        </template>
+                                        <template v-slot:default="dialog">
+                                            <v-card height="950">
+                                                <v-toolbar color="primary" dark>Opening from the bottom</v-toolbar>
+                                                <v-card-text>
+                                                    <div class="text-h2 pa-12"><Cita></Cita></div>
+                                                </v-card-text>
+                                                <v-card-actions class="justify-end">
+                                                    <v-btn text @click="dialog.value = false">Close</v-btn>
+                                                </v-card-actions>
+                                            </v-card>
+                                        </template>
+                                    </v-dialog>
+                                </v-col>
+                            </h1>
                             <br>
-                           
                         </section>
                     </v-img>
                     <!--
@@ -67,11 +86,19 @@
 
 </style>
 <script type="text/javascript">
+
+import Cita from '../components/Cita.vue'
+
 export default {
     name: 'Slider',
+        components:{
+            Cita    
+    },
     data() {
         return {
+            dialog: false,
             colors: [
+
                 'indigo',
                 'warning',
                 'pink darken-2',

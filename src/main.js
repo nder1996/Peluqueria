@@ -3,6 +3,19 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+import VueGeolocation from 'vue-browser-geolocation'
+
+Vue.config.productionTip = false
+Vue.use(VueGeolocation)
+import * as VueGoogleMaps from 'vue2-google-maps'
+
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyA-82NFW835QSuL2z2GXf-tZpADRjNw6hw',
+    libraries: 'places', // This is required if you use the Autocomplete plugin
+  },
+})
 
 
 import "firebase/auth";
@@ -18,6 +31,10 @@ const firebaseConfig = {
   messagingSenderId: "613793598831",
   appId: "1:613793598831:web:e3e51a70948c58876d2c9a"
 };
+
+
+
+
 firebase.initializeApp(firebaseConfig);
 
 export const db = firebase.firestore();
