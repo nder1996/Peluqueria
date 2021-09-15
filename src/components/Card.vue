@@ -1,3 +1,4 @@
+
 <template>
     <div>
         <v-container>
@@ -23,7 +24,7 @@
                 </v-row>
             </v-col>
         </v-container>
-        <Tabs></Tabs>
+       
     </div>
 </template>
 <style>
@@ -53,13 +54,11 @@
 }
 </style>
 <script>
-import Tabs from '../components/Tabs.vue'
+
 
 export default {
     name: 'Card',
-    components:{
-        Tabs
-    },
+   
     data() {
         return {
             page: 1,
@@ -71,12 +70,6 @@ export default {
                 { "id": 'servicio_4', "name": "CORTES DE PELO LARGO", "text": "Los profesionales de Carlos Style Perfect cortarán uno a uno los distintos mechones de pelo de manera que le den forma y volumen", "url": require('@/assets/Servicio_4.jpg') },
                 { "id": 'servicio_5', "name": "ESTILO FRENCH CROP", "text": "Se trata de un estilo de corte de cabello inspirado en los años 90. En este caso se pasa la maquinilla por la nuca y por los laterales.", "url": require('@/assets/Servicio_5.jpg') },
                 { "id": 'servicio_6', "name": "Degrade", "text": "Este corte se parece al Undercut porque al igual que él, consiste en ir dejando menor volumen de cabello.", "url": require('@/assets/Servicio_6.jpg') },
-                /*
-                { "id": 'servicio_2', "name": "", "text": "n1", "url": "" },
-                { "id": 'servicio_3', "name": "", "text": "n1", "url": "" },
-                { "id": 'servicio_4', "name": "", "text": "n1", "url": "" },
-                { "id": 'servicio_5', "name": "", "text": "n1", "url": "" },
-                { "id": 'servicio_6', "name": "", "text": "n1", "url": "" },*/
             ]
         }
     },

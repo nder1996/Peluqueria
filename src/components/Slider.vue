@@ -16,7 +16,7 @@
                                             <v-btn color="primary" v-bind="attrs" v-on="on" v-if="i==2">From the bottom</v-btn>
                                         </template>
                                         <template v-slot:default="dialog">
-                                            <v-card height="950">
+                                            <v-card height="1010">
                                                 <v-toolbar color="primary" dark>Opening from the bottom</v-toolbar>
                                                 <v-card-text>
                                                     <div class="text-h2 pa-12"><Cita></Cita></div>
