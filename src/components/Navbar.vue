@@ -1,7 +1,7 @@
 <template>
     <v-app-bar class="Navbar" color="black" height="120" dense dark>
-        <v-toolbar-title class="Logo text-center">
-            <img src="../assets/Logo.png" height="100" width="190" alt="">
+        <v-toolbar-title class="logo text-center">
+            <img src="../assets/logo.png" height="100" width="190" alt="">
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <!--
@@ -31,7 +31,7 @@ export default{
 	border:5px solid red;
 }
 
-.Logo{
+.logo{
 	width:100%;
 }
 .Linia{
@@ -39,7 +39,7 @@ export default{
 }
 
 /*
-.Logo h1{
+.logo h1{
 	border-bottom:3px solid white;
 	width:10%;
 }

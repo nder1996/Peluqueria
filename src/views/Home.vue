@@ -63,7 +63,7 @@ export default {
 </script>
 <style type="text/css" media="screen">
 .Principal {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     width: 80%;
     margin: auto;
 
@@ -73,12 +73,12 @@ export default {
 .Novedades {}
 
 .Novedades div {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     margin-left: 25px;
 
 }
 
 .Body {
-    border: 5px solid black;
+    /* border: 5px solid black; */
 }
 </style>

@@ -52,19 +52,19 @@
     .Numero{
     position: relative;
     top: -30%;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     font-size: 30px ;
  
 }
 .Titulo{
     position: relative;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     margin: 0;
 
 }
 
 .Servicios{
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 .Servicios .El , .Servicios .Ella {
@@ -74,13 +74,13 @@
 }
 
 .Servicios .Op{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     margin-top: 10px;
 
 }
 
 .Info{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     margin-top: 45px;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .Alertas-Info .alert{
-    border: 5px solid black;
+    /* border: 5px solid black; */
 }
 
 

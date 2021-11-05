@@ -138,11 +138,11 @@
 </template>
 <style>
 .Prueba {
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 .Titulo-Servicios {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     width: 100%;
 }
 </style>

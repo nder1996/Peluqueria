@@ -14,7 +14,7 @@
                 </v-card-text>
                 <v-divider></v-divider>
                 <v-card-text class="white--text">
-                  <img src="../assets/Logo.png" height="100" width="190"  alt="">
+                  <img src="../assets/logo.png" height="100" width="190"  alt="">
                 </v-card-text>
             </v-card>
         </v-footer>
